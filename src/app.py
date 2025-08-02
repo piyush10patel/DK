@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.helpers import some_helper_function
+from utils.helpers import calculate_average
 
 def main():
     st.title("My Streamlit App")
@@ -9,7 +9,7 @@ def main():
     user_input = st.sidebar.text_input("Enter something:")
     
     if st.sidebar.button("Submit"):
-        processed_data = some_helper_function(user_input)
+        processed_data = calculate_average(user_input)
         st.write("Processed Data:", processed_data)
 
     # Main content
