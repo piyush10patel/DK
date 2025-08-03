@@ -10,7 +10,7 @@ st.set_option('server.port', port)
 st.set_option('server.address', '0.0.0.0')
 
 def main():
-    st.title("My Streamlit App")
+    st.title("Welcome to Deepak Balmiki")
     
     # Sidebar for user input
     st.sidebar.header("User Input")
@@ -21,7 +21,7 @@ def main():
         st.write("Processed Data:", processed_data)
 
     # Main content
-    st.header("Welcome to My Streamlit App")
+    st.header("Welcome to Deepak Balmiki")
     st.write("This is a simple Streamlit application.")
 
 if __name__ == "__main__":
