@@ -1,22 +1,12 @@
 import os
 import streamlit as st
-from utils.helpers import calculate_average
 
 
 def main():
     st.title("Welcome to Deepak Balmiki")
-    
-    # Sidebar for user input
-    st.sidebar.header("User Input")
-    user_input = st.sidebar.text_input("Enter something:")
-    
-    if st.sidebar.button("Submit"):
-        processed_data = calculate_average(user_input)
-        st.write("Processed Data:", processed_data)
-
-    # Main content
     st.header("Welcome to Deepak Balmiki")
-    st.write("This is a simple Streamlit application.")
+    st.write("This is a simple welcome page deployed on Render.com!")
+
 
 if __name__ == "__main__":
     main()
