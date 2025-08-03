@@ -2,12 +2,6 @@ import os
 import streamlit as st
 from utils.helpers import calculate_average
 
-# Render.com sets PORT as an environment variable
-port = int(os.environ.get("PORT", 8080))
-
-# These options ensure Streamlit listens on the correct port/address for Render
-st.set_option('server.port', port)
-st.set_option('server.address', '0.0.0.0')
 
 def main():
     st.title("Welcome to Deepak Balmiki")
